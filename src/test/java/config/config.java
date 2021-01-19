@@ -11,7 +11,7 @@ public class config {
     static WebDriver driver = null;
 
     public static WebDriver CreateWebDriver(String browser) {
-        System.setProperty("webdriver.chrome.driver", "/home/opah/Área de Trabalho/Driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/java/config/chromedriver.exe");
         System.out.println("Browser: " + browser);
 
         if ("ff".equals(browser.toLowerCase()) || "firefox".equals(browser.toLowerCase())) {

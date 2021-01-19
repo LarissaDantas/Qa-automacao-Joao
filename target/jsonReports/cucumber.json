@@ -9,28 +9,28 @@
     "line": 2,
     "elements": [
       {
-        "line": 17,
+        "line": 13,
         "name": "Deve inserir uma conta com sucesso",
         "description": "",
-        "id": "programação-sky;deve-inserir-uma-conta-com-sucesso;;2",
+        "id": "shoestock;deve-inserir-uma-conta-com-sucesso;;2",
         "type": "scenario",
         "keyword": "Esquema do Cenario",
         "steps": [
           {
             "result": {
-              "duration": 29600854682,
+              "duration": 8832352900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "que acesso o site da sky https://www.sky.com.br/",
+            "line": 5,
+            "name": "que acesso o site da shoestock https://www.shoestock.com.br/",
             "match": {
               "arguments": [
                 {
-                  "val": "https://www.sky.com.br/",
-                  "offset": 25
+                  "val": "https://www.shoestock.com.br/",
+                  "offset": 31
                 }
               ],
-              "location": "SkySteps.AcessoOSitedaSky(String)"
+              "location": "Steps.AcessoOSitedaSky(String)"
             },
             "matchedColumns": [
               0
@@ -39,47 +39,47 @@
           },
           {
             "result": {
-              "duration": 317546020,
+              "duration": 2745173200,
               "status": "passed"
             },
-            "line": 10,
-            "name": "seleciono em progração",
+            "line": 6,
+            "name": "seleciono o modelo de sandalias",
             "match": {
-              "location": "SkySteps.selecionoEmProgração()"
+              "location": "Steps.selecionoOModeloDeSandalias()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 9611561510,
+              "duration": 9686175400,
               "status": "passed"
             },
-            "line": 11,
-            "name": "seleciono a programação que está passando na hora",
+            "line": 7,
+            "name": "seleciono a sandalia desejada",
             "match": {
-              "location": "SkySteps.selecionoAProgramaçãoQueEstáPassandoNaHora()"
+              "location": "Steps.selecionoASandaliaDesejada()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 118896283,
+              "duration": 3700902900,
               "status": "passed"
             },
-            "line": 12,
-            "name": "valido se o texto é o mesmo do modal",
+            "line": 8,
+            "name": "visualiso a sandalia no meu carrinho",
             "match": {
-              "location": "SkySteps.validoSeOTextoÉOMesmoDoModal()"
+              "location": "Steps.visualisoASandaliaNoMeuCarrinho()"
             },
             "keyword": "Entao "
           }
         ]
       }
     ],
-    "name": "Programação Sky",
-    "description": "\nComo um usuário\nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
-    "id": "programação-sky",
+    "name": "shoestock",
+    "description": "",
+    "id": "shoestock",
     "keyword": "Funcionalidade",
-    "uri": "src/test/resources/Sky.feature"
+    "uri": "src/test/resources/shoestock.feature"
   }
 ]

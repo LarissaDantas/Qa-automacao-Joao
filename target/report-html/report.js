@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Sky.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/shoestock.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,125 +7,125 @@ formatter.feature({
     }
   ],
   "line": 2,
-  "name": "Programação Sky",
-  "description": "\nComo um usuário\nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
-  "id": "programação-sky",
+  "name": "shoestock",
+  "description": "",
+  "id": "shoestock",
   "keyword": "Funcionalidade"
 });
 formatter.scenarioOutline({
-  "line": 8,
+  "line": 4,
   "name": "Deve inserir uma conta com sucesso",
   "description": "",
-  "id": "programação-sky;deve-inserir-uma-conta-com-sucesso",
+  "id": "shoestock;deve-inserir-uma-conta-com-sucesso",
   "type": "scenario_outline",
   "keyword": "Esquema do Cenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "que acesso o site da sky \u003curl\u003e",
+  "line": 5,
+  "name": "que acesso o site da shoestock \u003curl\u003e",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 10,
-  "name": "seleciono em progração",
+  "line": 6,
+  "name": "seleciono o modelo de sandalias",
   "keyword": "E "
 });
 formatter.step({
-  "line": 11,
-  "name": "seleciono a programação que está passando na hora",
+  "line": 7,
+  "name": "seleciono a sandalia desejada",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 12,
-  "name": "valido se o texto é o mesmo do modal",
+  "line": 8,
+  "name": "visualiso a sandalia no meu carrinho",
   "keyword": "Entao "
 });
 formatter.examples({
-  "line": 15,
+  "line": 11,
   "name": "",
   "description": "",
-  "id": "programação-sky;deve-inserir-uma-conta-com-sucesso;",
+  "id": "shoestock;deve-inserir-uma-conta-com-sucesso;",
   "rows": [
     {
       "cells": [
         "url"
       ],
-      "line": 16,
-      "id": "programação-sky;deve-inserir-uma-conta-com-sucesso;;1"
+      "line": 12,
+      "id": "shoestock;deve-inserir-uma-conta-com-sucesso;;1"
     },
     {
       "cells": [
-        "https://www.sky.com.br/"
+        "https://www.shoestock.com.br/"
       ],
-      "line": 17,
-      "id": "programação-sky;deve-inserir-uma-conta-com-sucesso;;2"
+      "line": 13,
+      "id": "shoestock;deve-inserir-uma-conta-com-sucesso;;2"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.scenario({
-  "line": 17,
+  "line": 13,
   "name": "Deve inserir uma conta com sucesso",
   "description": "",
-  "id": "programação-sky;deve-inserir-uma-conta-com-sucesso;;2",
+  "id": "shoestock;deve-inserir-uma-conta-com-sucesso;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "que acesso o site da sky https://www.sky.com.br/",
+  "line": 5,
+  "name": "que acesso o site da shoestock https://www.shoestock.com.br/",
   "matchedColumns": [
     0
   ],
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 10,
-  "name": "seleciono em progração",
+  "line": 6,
+  "name": "seleciono o modelo de sandalias",
   "keyword": "E "
 });
 formatter.step({
-  "line": 11,
-  "name": "seleciono a programação que está passando na hora",
+  "line": 7,
+  "name": "seleciono a sandalia desejada",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 12,
-  "name": "valido se o texto é o mesmo do modal",
+  "line": 8,
+  "name": "visualiso a sandalia no meu carrinho",
   "keyword": "Entao "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "https://www.sky.com.br/",
-      "offset": 25
+      "val": "https://www.shoestock.com.br/",
+      "offset": 31
     }
   ],
-  "location": "SkySteps.AcessoOSitedaSky(String)"
+  "location": "Steps.AcessoOSitedaSky(String)"
 });
 formatter.result({
-  "duration": 29600854682,
+  "duration": 8832352900,
   "status": "passed"
 });
 formatter.match({
-  "location": "SkySteps.selecionoEmProgração()"
+  "location": "Steps.selecionoOModeloDeSandalias()"
 });
 formatter.result({
-  "duration": 317546020,
+  "duration": 2745173200,
   "status": "passed"
 });
 formatter.match({
-  "location": "SkySteps.selecionoAProgramaçãoQueEstáPassandoNaHora()"
+  "location": "Steps.selecionoASandaliaDesejada()"
 });
 formatter.result({
-  "duration": 9611561510,
+  "duration": 9686175400,
   "status": "passed"
 });
 formatter.match({
-  "location": "SkySteps.validoSeOTextoÉOMesmoDoModal()"
+  "location": "Steps.visualisoASandaliaNoMeuCarrinho()"
 });
 formatter.result({
-  "duration": 118896283,
+  "duration": 3700902900,
   "status": "passed"
 });
 });
